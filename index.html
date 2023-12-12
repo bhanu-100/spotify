@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Web player music for everyone</title>
+    <link rel = "icon"  href = "./img/Spotify_App_Logo.svg.png" type = "image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<section class="section1">
+    <div class="home">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+    </div>
+    <div class="home search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" value="" placeholder="search">
+    </div>
+    <div class="home library">
+       <div class="home">
+        <i class="fa-solid fa-lines-leaning"></i>
+        <span>Your library</span>
+        </div>
+        <div class="songlist ">
+         <img class="listimg" alt="1">
+         <span class="songname"></span>
+         <i  id="1" class="fa-regular  songplay fa-circle-play"></i>
+        </div>
+        <div class="songlist">
+         <img class="listimg" alt="1">
+         <span class="songname"> </span>
+         <i id="2"  class="fa-regular songplay  fa-circle-play"></i>
+        </div>
+        <div class="songlist ">
+         <img class="listimg"  alt="1">
+         <span class="songname"></span>
+         <i  id="3" class="fa-regular  songplay fa-circle-play"></i>
+        </div>
+        <div class="songlist ">
+         <img class="listimg"  alt="1">
+         <span class="songname"></span>
+         <i  id="4" class="fa-regular songplay  fa-circle-play"></i>
+        </div>
+        <div class="songlist ">
+         <img class="listimg" alt="1">
+         <span class="songname"></span>
+         <i  id="5" class="fa-regular  songplay fa-circle-play"></i>
+        </div>
+        <div class="songlist ">
+         <img class="listimg" alt="1">
+         <span class="songname"></span>  
+         <i  id="6" class="fa-regular  songplay fa-circle-play"></i>          
+        </div>
+    </div>
+
+</section>
+<section class="section2">
+    <div >
+       <img  id="bgimg" src="./img/1.jpg"  alt="no image">
+    </div>
+   <div class="bar">
+    <div>
+    <input type="range" name="rangebar" class="rangebar" id="myprogressbar" value="0" min="0" max="100">
+    </div> 
+    <div>
+        <i class="fa-solid fa-backward-step" id="previous"></i>
+        <i class="fa-regular fa-circle-play" id="masterplay"></i>
+        <i class="fa-solid fa-forward-step" id="next"></i>
+    </div>
+   </div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
