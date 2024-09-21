@@ -27,6 +27,22 @@ masterplay.addEventListener('click',()=>{
 })
 audioelement.addEventListener('timeupdate',()=>{
     progress=parseInt(audioelement.currentTime/audioelement.duration*100);
+    if(progress == 100){
+            if(index>=6)
+            {
+                index=1;
+            }
+            else{
+            index +=1;
+            }
+        audioelement.src=`./music/${index}.mp3`;
+        bg.src=`./img/${index}.jpg`;
+        console.log(bg);
+        audioelement.currentTime=0;
+        audioelement.play();
+        masterplay.classList.remove('fa-circle-play');
+        masterplay.classList.add('fa-circle-pause');
+    }
     myprogressbar.value=progress;
 
 })
